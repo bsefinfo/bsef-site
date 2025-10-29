@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BSEF — Bosnian Science & Engineering Fair</title>
+  <meta name="description" content="First-ever Bosnian Science & Engineering Fair in the Balkans — December 14, 2025 in Mostar, Bosnia and Herzegovina. Organized for all Bosnian schools, bringing together innovation, creativity, and collaboration." />
+  <style>
+    :root {
+      --accent: #0b76ef;
+      --bg: #f9fafb;
+      --muted: #4b5563;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', 'Inter', sans-serif;
+      margin: 0;
+      background: var(--bg);
+      color: #111827;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 40px;
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .logo img {
+      height: 70px;
+      width: auto;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #111827;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    nav a:hover { color: var(--accent); }
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #e0f2fe, #f5f3ff);
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      max-width: 700px;
+      margin: 0 auto;
+      color: var(--muted);
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      background: var(--accent);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 10px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    section {
+      max-width: 1000px;
+      margin: 60px auto;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+      padding: 40px;
+    }
+    h2 { font-size: 1.8rem; margin-bottom: 10px; }
+    .muted { color: var(--muted); }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111827;
+      color: white;
+      font-size: 0.9rem;
+    }
+    form input, form textarea, form select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      font-size: 1rem;
+    }
+    form button {
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="Untitled-2.png" alt="BSEF Symbol" />
+      <img src="Untitled-1.png" alt="BSEF Logo" />
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#register">Register</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Bosnian Science & Engineering Fair (BSEF)</h1>
+    <p>The first-ever science and engineering fair in Bosnia and Herzegovina — a celebration of innovation, creativity, and youth potential. Happening on <strong>December 14, 2025</strong> in <strong>Mostar, Bosnia and Herzegovina</strong>, open to all Bosnian schools and students passionate about STEM.</p>
+    <a href="#register" class="btn">Register Your Project</a>
+  </section>
+
+  <section id="about">
+    <h2>About the Event</h2>
+    <p>BSEF is the first major scientific and engineering fair ever held in Bosnia and Herzegovina and across the Balkans. It aims to unite young innovators, educators, and researchers to showcase projects that can shape the future.</p>
+    <p>The event welcomes participants from all over Bosnia — with invitations and registration links sent to every school in the country. Whether you are a student, mentor, or educator, BSEF gives you the opportunity to share ideas, connect, and be part of a growing movement of young scientists.</p>
+    <ul>
+      <li><strong>Who can participate:</strong> Students aged 13–19, teachers, mentors, and science clubs.</li>
+      <li><strong>When:</strong> December 14, 2025.</li>
+      <li><strong>Where:</strong> Mostar, Bosnia and Herzegovina.</li>
+      <li><strong>What to expect:</strong> Science projects, prototype showcases, workshops, inspiring talks, and awards for the most creative innovations.</li>
+    </ul>
+  </section>
+
+  <section id="schedule">
+    <h2>Schedule</h2>
+    <p class="muted">A one-day event celebrating creativity, research, and collaboration.</p>
+    <ul>
+      <li><strong>Morning:</strong> Opening Ceremony, Keynote Session, and Project Presentations.</li>
+      <li><strong>Afternoon:</strong> Workshops, Innovation Panels, and Award Ceremony.</li>
+    </ul>
+  </section>
+
+  <section id="register">
+    <h2>Register Your Project</h2>
+    <p>Registration is open for all Bosnian schools! Teams can submit projects in categories such as Biology, Physics, Chemistry, Computer Science, and Engineering.</p>
+    <form onsubmit="event.preventDefault();alert('Registration sent! We will contact you soon.');">
+      <label>Team / Project Name</label>
+      <input placeholder="Team Nova" required />
+
+      <label>School / Institution</label>
+      <input placeholder="Gimnazija Mostar" required />
+
+      <label>Category</label>
+      <select>
+        <option>Biology</option>
+        <option>Physics</option>
+        <option>Engineering</option>
+        <option>Chemistry</option>
+        <option>Computer Science</option>
+      </select>
+
+      <label>Contact Email</label>
+      <input type="email" placeholder="team@example.com" required />
+
+      <label>Short Abstract</label>
+      <textarea rows="4" maxlength="500" placeholder="Describe your project briefly..." required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>For questions, partnerships, or volunteering inquiries, reach out to us anytime:</p>
+    <p><strong>Email:</strong> <a href="mailto:bsef.org@gmail.com">bsef.org@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Bosnian Science & Engineering Fair (BSEF) — Organized by students, for students.</p>
+  </footer>
+</body>
+</html>
